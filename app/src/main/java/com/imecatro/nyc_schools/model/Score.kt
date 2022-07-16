@@ -1,9 +1,8 @@
 package com.imecatro.nyc_schools.model
 
-
 import com.google.gson.annotations.SerializedName
 
-data class SATResultsItem(
+data class Score(
     @SerializedName("dbn")
     val dbn: String,
     @SerializedName("num_of_sat_test_takers")
@@ -16,4 +15,5 @@ data class SATResultsItem(
     val satWritingAvgScore: String,
     @SerializedName("school_name")
     val schoolName: String
+
 )

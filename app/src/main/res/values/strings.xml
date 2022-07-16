@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">NYC_Schools</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="score_error">School does not have SAT score</string>
+    <string name="score_math">Math | %s</string>
+    <string name="score_reading">Reading | %s</string>
+    <string name="score_writing">Writing | %s</string>
+
 </resources>
