@@ -15,11 +15,23 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import javax.inject.Inject
 
+/**
+ * This is my ViewModel
+ * In simple terms this is the most valuable player which means that it is in charge of handle all the data
+ * It get the data from the repository and then it update the data in the LiveData
+ * once the data change in the LiveData, the Views can react to the changes
+ * I am using Dependency injection
+ *
+ * */
+
 @HiltViewModel
 class SchoolViewModel @Inject constructor(
     private val schoolRepository: SchoolRepository
 ) : ViewModel() {
 
+    /**
+     * schools is
+     */
     private val _schools: MutableLiveData<UIState> = MutableLiveData(UIState.LOADING)
     val schools: LiveData<UIState> get() = _schools
 
@@ -50,7 +62,6 @@ class SchoolViewModel @Inject constructor(
         CoroutineScope(Dispatchers.IO).launch {
             val response= schoolRepository.getSatResults(dbn)
             if (response.isSuccessful){
-
                 _scoreData.postValue(response.body())
             }
             else{

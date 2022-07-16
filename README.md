@@ -1,0 +1,13 @@
+## Achievements
+- Kotlin
+- Error handling
+- Stability
+- Speed
+- MVVM
+- Retrofit
+- HILT(dependency injection)
+- Gson for entities
+- Coroutines : an easy and modern way to handle asynchronous  programming 
+- RecyclerView in order to show the list 
+- Fragments (2)
+- Using best practices in order to make it scalable and maintainable code 

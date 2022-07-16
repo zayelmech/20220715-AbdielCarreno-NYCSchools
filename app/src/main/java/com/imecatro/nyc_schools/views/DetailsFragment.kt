@@ -49,9 +49,11 @@ class DetailsFragment : Fragment() {
             if (!score.isNullOrEmpty()) {
                 binding.apply {
                     scoreSchoolName.text = score[0].schoolName
-                    scoreMath.text = score[0].satMathAvgScore
-                    scoreReading.text = score[0].satCriticalReadingAvgScore
-                    scoreWriting.text = score[0].satWritingAvgScore
+
+                    scoreMath.text = "Math: ${score[0].satMathAvgScore}"
+                    scoreReading.text ="Reading: ${ score[0].satCriticalReadingAvgScore}"
+                    scoreWriting.text = "Writing: ${score[0].satWritingAvgScore}"
+
                     scoreMath.visibility = View.VISIBLE
                     scoreReading.visibility = View.VISIBLE
                     scoreWriting.visibility = View.VISIBLE
